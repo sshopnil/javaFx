@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="simpleForm.LogInController">
+   <children>
+      <Label alignment="CENTER" layoutX="89.0" layoutY="14.0" prefHeight="19.0" prefWidth="422.0" text="Log on to your account.." textFill="#fefefe">
+         <font>
+            <Font name="Ink Free" size="29.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="123.0" text="Name: " textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="200.0" text="ID:" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="272.0" text="Password:" textFill="#f7f7f7">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginId" layoutX="89.0" layoutY="220.0" prefHeight="28.0" prefWidth="202.0" promptText="Your id.." style="-fx-background-color: transparent; -fx-border-color: rgba(105, 99, 255, 0.5); -fx-border-style: dotted dotted solid dotted; -fx-border-width: 2.5; -fx-text-fill: white; -fx-font-size: 12.5; -fx-font-weight: 300;" />
+      <PasswordField fx:id="loginPass" layoutX="89.0" layoutY="293.0" prefHeight="27.0" prefWidth="365.0" promptText="Enter your password.." style="-fx-background-color: transparent; -fx-border-style: dotted dotted solid dotted; -fx-border-color: rgba(105, 99, 255, 0.5); -fx-border-width: 2.5; -fx-text-fill: white; -fx-font-size: 12.5; -fx-font-weight: 300;" />
+      <TextField fx:id="loginName" layoutX="89.0" layoutY="154.0" prefHeight="28.0" prefWidth="202.0" promptText="Enter your name here..." style="-fx-background-color: transparent; -fx-border-color: rgba(105, 99, 255, 0.5); -fx-border-style: dotted dotted solid dotted; -fx-border-width: 2.5; -fx-text-fill: white; -fx-font-size: 12.5; -fx-font-weight: 300;" />
+      <Button fx:id="submitBtn" layoutX="87.0" layoutY="343.0" mnemonicParsing="false" onKeyPressed="#whenKeyisPressed" onMouseClicked="#submitClicked" prefHeight="31.0" prefWidth="97.0" style="-fx-background-color: rgba(106, 90, 205);" text="Submit" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="11.741006851196289" />
+         </font>
+      </Button>
+      <Label fx:id="successMsg" alignment="CENTER_RIGHT" disable="true" layoutX="86.0" layoutY="82.0" prefHeight="31.0" prefWidth="392.0" text="Success!!!" textFill="#a0ff96" visible="false">
+         <font>
+            <Font name="Bell MT" size="29.0" />
+         </font>
+      </Label>
+      <Label fx:id="failedMsg" alignment="CENTER_RIGHT" disable="true" layoutX="86.0" layoutY="82.0" prefHeight="31.0" prefWidth="392.0" text="Failed!!" textFill="#ff3b3b" visible="false">
+         <font>
+            <Font name="Berlin Sans FB" size="29.0" />
+         </font>
+      </Label>
+      <Button fx:id="backtoRegisterBtn" layoutX="486.0" layoutY="345.0" mnemonicParsing="false" onMouseClicked="#backtoReg" prefHeight="26.0" prefWidth="83.0" style="-fx-background-color: transparent;" text="Register&gt;&gt;" textFill="WHITE">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
